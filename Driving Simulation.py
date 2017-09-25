@@ -1,6 +1,7 @@
 initial_velocity=0
 time=int(input("Please insert the amount of time spent on the road: "))
 acc=int(input("Please insert the cars acceleration: "))
+dist=int(input("please insert the cars destination: "))
 dist=((initial_velocity*time)+(acc*time*time)/2)
 velocity=initial_velocity+(acc*time)
 speed=dist/time
@@ -20,7 +21,4 @@ for i in range(0,time+1):
     distance= 1/2*i*speed
     print("distance :", "*"*int(distance/10))
 
-if distance >= dist :
-    print("\nReach Destination")
-else:
-    print("\nNot reach destination")
+
